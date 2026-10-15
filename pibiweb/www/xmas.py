@@ -6,8 +6,10 @@ def get_context(context):
 	context.no_cache = 1
 	context.show_sidebar = False
 
-	# Get language from URL parameter
-	lang = frappe.form_dict.get('_lang', 'en')
+	# Language from the URL parameter, only if it is an enabled language of the site
+	lang = frappe.form_dict.get('_lang') or 'en'
+	if not frappe.db.exists('Language', {'name': lang, 'enabled': 1}):
+		lang = 'en'
 	frappe.local.lang = lang
 
 	# Pass language to template context
