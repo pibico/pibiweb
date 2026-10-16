@@ -521,8 +521,6 @@ header {
 
 .legal-curtain,
 .privacy-curtain {
-    background: url('/assets/pibiweb/images/legal_bg.webp') no-repeat center center fixed;
-    background-size: cover;
     height: 100vh; /* Force viewport height */
     position: fixed; /* Ensure fixed positioning */
     top: 0;
