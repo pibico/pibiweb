@@ -3,7 +3,7 @@ app_title = "Pibiweb"
 app_publisher = "pibiCo"
 app_description = "Web for pibiCo"
 app_email = "pibico.sl@gmail.com"
-app_license = "unlicense"
+app_license = "MIT"
 
 # Apps
 # ------------------

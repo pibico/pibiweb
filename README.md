@@ -33,4 +33,4 @@ bench --site <sitio> install-app pibiweb
 
 #### Licencia
 
-unlicense
+MIT. Ver `license.txt`.
