@@ -243,8 +243,6 @@ app_license = "unlicense"
 # }
 
 fixtures = [
-  {
-    "dt": "Web Page",
-    "module": ["=", "Pibiweb"]
-  }
+  # by module: export_fixtures only reads "filters", a top-level "module" key is ignored
+  {"dt": "Web Page", "filters": [["module", "=", "Pibiweb"]]},
 ]
